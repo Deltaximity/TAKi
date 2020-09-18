@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EDoBN,SAAS,EAAE,UAAU;CCnB7B;;AAED,AAAA,IAAI,CAAC;EACD,gBAAgB,EDHN,OAAO;CCIpB;;AGTD,AAAA,SAAS,CAAC;EACN,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,IAAI;CAkCf;;AApCD,AAII,SAJK,CAIL,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;EAEnB,gBAAgB,EJHX,qBAAI;EIIT,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,QAAQ;EACrB,OAAO,EAAE,MAAM;CAGlB;;AAfL,AAiBI,SAjBK,CAiBL,MAAM,CAAC;EACH,KAAK,EAAE,IAAI;EAEX,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,MAAM;CAcpB;;AAnCL,AAuBQ,SAvBC,CAiBL,MAAM,CAMF,EAAE,CAAC;EACC,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,MAAM;EAEf,WAAW,EAAE,IAAI;EACjB,WAAW,EJPH,GAAG;CIad;;AAlCT,AA8BY,SA9BH,CAiBL,MAAM,CAMF,EAAE,AAOG,MAAM,CAAC;EACJ,MAAM,EAAE,OAAO;EACf,gBAAgB,EJ1BnB,qBAAI;CI2BJ;;AEjCb,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,SAAS;CACnC",
+    "sources": [
+        "main.scss",
+        "base/_variables.scss",
+        "base/_base.scss",
+        "base/_typography.scss",
+        "base/_animations.scss",
+        "layout/_navbar.scss",
+        "layout/_header.scss",
+        "layout/_layout.scss",
+        "layout/_sections.scss",
+        "layout/_footer.scss",
+        "components/_cards.scss",
+        "components/_buttons.scss",
+        "components/_modals.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

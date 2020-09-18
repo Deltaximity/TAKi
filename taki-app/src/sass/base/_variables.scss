@@ -1,0 +1,47 @@
+// COLORS
+// $color-primary
+// $color-primary-bg
+// $color-secondary
+// $color-accent
+$color-light: #f7f7f7;
+$color-dark: #111;
+// $color-gray
+
+// SPECIAL
+
+// DARK MODE
+
+// JS MATERIAL
+// .darkmode {}
+
+//——————————————————————————
+
+$f-weight-light: 300;
+$f-weight-regular: 400;
+$f-weight-medium: 500;
+$f-weight-semibold: 600;
+$f-weight-bold: 700;
+
+$f-sans: 'Poppins', sans-serif;
+$f-display: 'Abril Fatface', cursive;
+
+//——————————————————————————
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-selfcenter {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

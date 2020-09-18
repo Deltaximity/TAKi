@@ -1,2 +1,2 @@
 # TAKi
- A Multi-tool productivity web application
+ TAKi is a Multi-tool productivity web application

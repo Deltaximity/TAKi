@@ -1,12 +1,13 @@
 h1 {
     font-family: $f-display;
-    font-size: $f-large;
-    font-weight: $f-weight-regular;
+    font-size: $f-largest;
+    font-weight: $fw-regular;
     line-height: 60px;
 }
 
 #clock {
-    font-size: $f-medium;
-    font-weight: $f-weight-semibold;
+    color: $color-gray;
+    font-size: $f-large;
+    font-weight: $fw-medium;
     line-height: 40px;
 }

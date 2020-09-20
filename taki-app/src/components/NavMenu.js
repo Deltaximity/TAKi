@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function NavMenu() {
   return (
-    <div className="nav-menu">
+    <nav>
       <div className="container">
-        <div id="logo">logo</div>
+        <div id="logo">LOGO</div>
       </div>
       <div className="links">
           <ul>
@@ -17,7 +17,7 @@ function NavMenu() {
             <li><Link to="/notepad">Notepad</Link></li>
           </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 

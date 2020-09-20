@@ -7,3 +7,10 @@ header {
     align-items: flex-end;
     justify-content: space-between;
 }
+
+.action-panel {
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+    // border: $highlight;
+}

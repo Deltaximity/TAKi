@@ -21,6 +21,12 @@ h1 {
   line-height: 60px;
 }
 
+h2 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #E8B1A3;
+}
+
 #clock {
   color: #D48BA6;
   font-size: 48px;
@@ -161,9 +167,6 @@ header {
 }
 
 #main .things-done {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -171,13 +174,35 @@ header {
 }
 
 #main .focus-sessions {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
   z-index: 1;
+}
+
+#main .things-done, #main .focus-sessions {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .card-label, #main .corner-label {
+  color: #D48BA6;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 #main .activity-log {
@@ -249,5 +274,6 @@ footer p a:hover {
   border-radius: 10px;
   -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
 }
 /*# sourceMappingURL=main.css.map */

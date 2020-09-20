@@ -5,6 +5,12 @@ h1 {
     line-height: 60px;
 }
 
+h2 {
+    font-size: $f-largest;
+    font-weight: $fw-medium;
+    color: $color-primary;
+}
+
 #clock {
     color: $color-gray;
     font-size: $f-large;

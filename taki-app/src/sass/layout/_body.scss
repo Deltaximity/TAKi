@@ -17,15 +17,27 @@
     }
 
     .things-done {
-        grid-row: 1/2;
         grid-column: 3/4;
         z-index: 2;
     }
 
     .focus-sessions {
-        grid-row: 1/2;
         grid-column: 4/5;
         z-index: 1;
+    }
+
+    .things-done, .focus-sessions {
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-label, .corner-label {
+        color: $color-gray;
+        font-size: $f-small;
+        font-weight: $fw-medium;
     }
 
     .activity-log {

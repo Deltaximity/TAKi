@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { useSpring, animated } from 'react-spring';
 
 function NavMenu() {
   return (
@@ -9,12 +10,12 @@ function NavMenu() {
       </div>
       <div className="links">
           <ul>
-            <li><Link to="/">Overview</Link></li>
-            <li><Link to="/checklist">Checklist</Link></li>
-            <li><Link to="/countdown">Countdown Timer</Link></li>
-            <li><Link to="/focus">Focus Timer</Link></li>
-            <li><Link to="/stopwatch">Stopwatch</Link></li>
-            <li><Link to="/notepad">Notepad</Link></li>
+            <Link style={{textDecoration: 'none'}} to="/"><li>Overview</li></Link>
+            <Link style={{textDecoration: 'none'}} to="/checklist"><li>Checklist</li></Link>
+            <Link style={{textDecoration: 'none'}} to="/countdown"><li>Countdown Timer</li></Link>
+            <Link style={{textDecoration: 'none'}} to="/focus"><li>Focus Timer</li></Link>
+            <Link style={{textDecoration: 'none'}} to="/stopwatch"><li>Stopwatch</li></Link>
+            <Link style={{textDecoration: 'none'}} to="/notepad"><li>Notepad</li></Link>
           </ul>
       </div>
     </nav>

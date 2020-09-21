@@ -9,3 +9,7 @@
 body {
     background-color: $color-light;
 }
+
+::selection {
+    background-color: $color-secondary;
+}

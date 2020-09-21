@@ -1,7 +1,7 @@
 nav {
     grid-row: 1/-1;
     grid-column: 1/2;
-    background: linear-gradient(275.55deg, #EBC0A8 8.85%, #E49C9C 91.15%);
+    background: linear-gradient(275.55deg, $color-primary-bg 8.85%, $color-secondary-bg 91.15%);
     
     .container {
         width: 100%;
@@ -28,6 +28,8 @@ nav {
             // background-color: #ccc;
             line-height: 50px;
             font-weight: $fw-semibold;
+            color: $color-light;
+            position: relative;
 
             &:hover {
                 cursor: pointer;

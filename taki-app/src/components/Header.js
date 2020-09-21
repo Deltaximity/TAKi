@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
-import {useSpring, animated, config} from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 import Clock from './Clock';
 
 function Header() {

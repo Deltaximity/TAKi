@@ -4,10 +4,10 @@ function Checklist() {
     return (
         <>
             <div className="card checklist">
-                <p className="corner-label">Checklist</p>
+                <p className="corner-label">To-Do</p>
             </div>
             <div className="card done-list">
-                <p className="corner-label">Things Done</p>
+                <p className="corner-label">Done</p>
             </div>
         </>
     )

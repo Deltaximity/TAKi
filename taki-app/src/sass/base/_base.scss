@@ -11,5 +11,5 @@ body {
 }
 
 ::selection {
-    background-color: $color-secondary;
+    background-color: rgba($color-secondary, .8);
 }

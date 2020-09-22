@@ -11,6 +11,26 @@ header {
 .action-panel {
     grid-column: 3/4;
     grid-row: 2/3;
+    z-index: 1;
+    padding-top: 10px;
 
-    // border: $highlight;
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        background: none;
+        border: none;
+        // outline: none; bad for accessibility 
+        float: right;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba($color-dark, .1);
+            // https://www.w3schools.com/css/css_tooltip.asp 
+        }
+
+        img {
+            -webkit-user-drag: none;
+        }
+    }
 }

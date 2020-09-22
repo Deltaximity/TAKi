@@ -2,7 +2,7 @@ import React from 'react';
 
 function Stopwatch() {
     return (
-        <div className="card notepad">
+        <div className="card stopwatch">
 
         </div>
     )

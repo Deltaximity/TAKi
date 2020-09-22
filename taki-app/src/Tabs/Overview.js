@@ -1,6 +1,5 @@
 import React from 'react';
 import {useSpring, animated } from 'react-spring';
-import Header from '../components/Header';
 
 
 function Overview() {
@@ -8,7 +7,7 @@ function Overview() {
     let thingsDone = 72;
     let focusSessions = 14;
 
-    const slideIn = useSpring({from: {opacity: 0, height: 140}, to: {opacity: 1, height: 60}});
+    // const slideIn = useSpring({from: {opacity: 0, height: 140}, to: {opacity: 1, height: 60}});
     
     return (
         <>

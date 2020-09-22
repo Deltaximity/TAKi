@@ -4,7 +4,7 @@ function Countdown() {
     let daysUntil = 15;
     return (
         <div className="countdown-cards">
-            <div className="card" onClick="">
+            <div className="card">
                 <div>
                     <h2>{daysUntil}</h2>
                     <p>Days</p>

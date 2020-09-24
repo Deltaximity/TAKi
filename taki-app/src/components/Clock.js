@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function Clock() {
-    const [minutes, setMinutes] = useState(0);
+    const [ , setMinutes] = useState(0);
     let time = new Date().toLocaleTimeString([], {timeStyle: 'short'});
 
     useEffect(() => {

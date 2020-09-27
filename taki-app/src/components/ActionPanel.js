@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
-
+import { useRef, useState } from 'react';
+// import Notepad from '../Tabs/Notepad';
 // import AddToDo from './Modals/AddItem';
 
 const Add = require('../icons/add.svg');
@@ -12,6 +13,21 @@ const Pause = require('../icons/pause.svg');
 // USE REQUIRE() IN ORDER FOR WEBPACK TO PROCESS INTERNAL FILES
 
 function ActionPanel() {
+    // const Note = document.querySelector('.note');
+    // function showValue() {
+    //     console.log(Note);
+    // }
+
+    const [copySuccess, setCopySuccess] = useState('');
+    const textAreaRef = useRef(null);
+
+    function copyToClipboard(e) {
+        textAreaRef.current.select();
+        document.execCommand('copy');
+        e.target.focus();
+        setCopySuccess('Copied!');
+    };
+    
     return (
         <div className="action-panel">
             <Switch>
@@ -38,7 +54,10 @@ function ActionPanel() {
             </Switch>
             <Switch>
                 <Route path="/notepad">
-                    <button><img src={Save} alt="Save" /></button>
+                    <button><img src={Save} alt="Save" onClick={copyToClipboard} /></button>
+                    {copySuccess}
+
+                    <textarea ref={textAreaRef} />
                     <button><img src={Trash} alt="Trash" /></button>
                 </Route>
             </Switch>

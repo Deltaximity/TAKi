@@ -25,8 +25,7 @@ header {
 
         &:hover {
             cursor: pointer;
-            background-color: rgba($color-dark, .1);
-            // https://www.w3schools.com/css/css_tooltip.asp 
+            background: rgba($color-dark, .1);
         }
 
         img {

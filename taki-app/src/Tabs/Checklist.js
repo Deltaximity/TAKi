@@ -1,12 +1,13 @@
 import React from 'react';
-import AddToDo from '../components/Modals/AddItem';
+import TodoList from '../components/TodoList';
 
 function Checklist() {
+
     return (
         <>
-        <AddToDo />
             <div className="card checklist">
                 <p className="corner-label">To-Do</p>
+                <TodoList />
             </div>
             <div className="card done-list">
                 <p className="corner-label">Done</p>

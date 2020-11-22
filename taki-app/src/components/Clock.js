@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 function Clock() {
-    const [ , setMinutes] = useState(0);
+    const [minutes , setMinutes] = useState(0);
     let time = new Date().toLocaleTimeString([], {timeStyle: 'short'});
 
     useEffect(() => {
         const time = setInterval(() => {
-            setMinutes(minutes => minutes + 1);
+            setMinutes(minutes + 1);
         }, 1000);
         return () => clearInterval(time);
     })

@@ -103,4 +103,19 @@
             @include scrollbar;
         }
     }
+
+    .stopwatch {
+        grid-row: 1/3;
+        grid-column: 1/-1;
+        position: relative;
+
+        .guides {
+            color: $color-secondary;
+            font-size: $f-tiny;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }

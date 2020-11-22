@@ -22,7 +22,16 @@ $color-white: #fff;
 $highlight: dashed 2px #000;
 
 // JS MATERIAL
-// .darkmode {}
+:export {
+    colorprimary: $color-primary;
+    colorsecondary: $color-secondary;
+    colorprimarybg: $color-primary-bg;
+    colorsecondarybg: $color-secondary-bg;
+    colorcta: $color-cta;
+    colorlight: $color-light;
+    colordark: $color-dark;
+    colorwhite: $color-white;
+}
 
 //——————————————————————————
 

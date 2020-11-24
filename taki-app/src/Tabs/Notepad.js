@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-// import ActionPanel from '../components/ActionPanel';
-import { useInputValue } from '../customHooks';
+import useLocalStorage from '../useLocalStorage';
+import { useCopyToClipboard, useClearNote } from '../customHooks';
 
 function Notepad() {
-    const [writtenText, setWrittenText] = useState('');
+    const [note, setNote] = useLocalStorage('note', () => '');
 
     return (
         <div className="card notepad">
             <textarea className="note" type="text" placeholder="Type something..."
-                value={writtenText} onChange={e => setWrittenText(e.target.value)}
+                value={note} onChange={e => setNote(e.target.value)}
             />
         </div>
     )

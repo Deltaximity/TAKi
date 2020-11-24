@@ -1,32 +1,4 @@
-import { useState, useEffect } from 'react';
-
-// data saving function using localStorage
-// function useStickyState(defaultValue, key) {
-//     const [value, setValue] = useState(() => {
-//         const stickyValue = window.localStorage.getItem(key);
-
-//         return stickyValue !== null
-//             ? JSON.parse(stickyValue)
-//             : defaultValue;
-//     });
-
-//     useEffect(() => {
-//         window.localStorage.setItem(key, JSON.stringify(value));
-//     }, [key, value]);
-
-//     return [key, setValue];
-// }
-
-// export default useStickyState;
-
-export const useInputValue = (initialValue) => {
-    const [value, setValue] = useState(initialValue);
-
-    return {
-        value,
-        onChange: (e) => setValue(e.target.value)
-    };
-};
+import { useState, useEffect, useRef } from 'react';
 
 export const useTimer = () => {
     const [isRunning, setIsRunning] = useState(false);
@@ -68,3 +40,33 @@ export const useStopwatch = () => {
         isRunning
     };
 };
+
+export const useCopyToClipboard = () => {
+    const textAreaRef = useRef(null);
+
+    const copyToClipboard = e => {
+        textAreaRef.current.select();
+        document.execCommand('copy');
+        e.target.focus();
+    };
+
+    return {
+        textAreaRef,
+        useCopyToClipboard
+    };
+}
+
+export const useClearNote = () => {
+    const textAreaRef = useRef(null);
+
+    const clearNote = e => {
+        textAreaRef.current.select();
+        document.execCommand('delete');
+        e.target.focus();
+    };
+
+    return {
+        textAreaRef,
+        clearNote
+    };
+}

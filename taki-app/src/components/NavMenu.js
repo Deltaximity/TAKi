@@ -4,19 +4,22 @@ import variables from '../sass/base/_variables.scss';
 // import { useSpring, animated } from 'react-spring';
 
 function NavMenu() {
+  const linkColor = {color: variables.colorlink}
+  const noDecoration = {textDecoration: 'none'}
+
   return (
     <nav>
       <div className="container">
-        <div id="logo" style={{backgroundColor: variables.colorsecondary}}>LOGO</div>
+        <div id="logo">LOGO</div>
       </div>
       <div className="links">
           <ul>
-            <Link style={{textDecoration: 'none'}} to="/"><li style={{color: variables.colorlight}}>Overview</li></Link>
-            <Link style={{textDecoration: 'none'}} to="/checklist"><li style={{color: variables.colorlight}}>Checklist</li></Link>
-            <Link style={{textDecoration: 'none'}} to="/countdown"><li style={{color: variables.colorlight}}>Countdown Timer</li></Link>
-            <Link style={{textDecoration: 'none'}} to="/focus"><li style={{color: variables.colorlight}}>Focus Timer</li></Link>
-            <Link style={{textDecoration: 'none'}} to="/stopwatch"><li style={{color: variables.colorlight}}>Stopwatch</li></Link>
-            <Link style={{textDecoration: 'none'}} to="/notepad"><li style={{color: variables.colorlight}}>Notepad</li></Link>
+            <Link style={noDecoration} to="/"><li style={linkColor}>Overview</li></Link>
+            <Link style={noDecoration} to="/checklist"><li style={linkColor}>Checklist</li></Link>
+            <Link style={noDecoration} to="/countdown"><li style={linkColor}>Countdown Timer</li></Link>
+            <Link style={noDecoration} to="/focus"><li style={linkColor}>Focus Timer</li></Link>
+            <Link style={noDecoration} to="/stopwatch"><li style={linkColor}>Stopwatch</li></Link>
+            <Link style={noDecoration} to="/notepad"><li style={linkColor}>Notepad</li></Link>
           </ul>
       </div>
       <div className="control-center">

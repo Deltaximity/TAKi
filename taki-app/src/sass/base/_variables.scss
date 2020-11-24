@@ -2,16 +2,18 @@
 // https://medium.com/@sroskelley/theming-in-react-using-sass-variables-26d2d3052c4
 $color-primary: #E8B1A3;
 $color-secondary: #D48BA6;
+$color-cta: #D94A7F;
 
 $color-primary-bg: #EBC0A8;
 $color-secondary-bg: #E49C9C;
-$color-cta: #D94A7F;
+$color-link: #f7f7f7;
 $color-light: #f7f7f7;
 $color-dark: #111;
 $color-white: #fff;
 // $color-accent
 
 // DARK MODE
+// $color-link: #f7f7f7;
 // $color-light: #111;
 // $color-dark: #f7f7f7;
 // $color-white: #222;
@@ -31,6 +33,7 @@ $highlight: dashed 2px #000;
     colorlight: $color-light;
     colordark: $color-dark;
     colorwhite: $color-white;
+    colorlink: $color-link;
 }
 
 //——————————————————————————

@@ -23,6 +23,21 @@ function ActionPanel(props) {
 
     // Modal State
     const [isOpen, setIsOpen] = useState(false);
+    // const node = useRef();
+
+    // const handleClick = e => {
+    //     if (node.current.contains(e.target))
+    //         return;
+
+    //     setIsOpen(false);
+    // }
+
+    // useEffect(() => {
+    //     document.addEventListener("click", handleClick);
+    //     return () => {
+    //         document.removeEventListener("click", handleClick);
+    //     };
+    // }, []);
 
     // Todo State
     const [todoInput, setTodoInput] = useState('');

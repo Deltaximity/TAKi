@@ -9,6 +9,7 @@
         text-align: center;
         border-radius: 6px;
         padding: 5px 10px;
+        font-weight: $fw-medium;
         white-space: nowrap;
     
         position: absolute;
@@ -27,7 +28,7 @@
         }
     }
 
-    &:hover .tooltip-text {
+    &:hover .tooltip-text, &:focus .tooltip-text {
         visibility: visible;
         animation: popdown .2s;
     }

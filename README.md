@@ -5,4 +5,4 @@ TAKi is a Multi-tool productivity web application, allowing users to use differe
 TAKi is a high school project done by DELTA. Started in September 2020 and aiming to finish by March 2021. 
 
 # Privacy & Security
-TAKi stores all the data locally and the app runs client-side. Even though TAKi never stores any data on any database or server, for your own safety, it is recommended that you never put any sensetive or private information in the app, such as credit card numbers, passswords etc.
+TAKi stores all the data locally and the app runs client-side. The use of LocalStorage has very similar security risks to Cookies, it is recommended that you never put any sensetive or private information in the app, such as credit card numbers, passswords etc.
